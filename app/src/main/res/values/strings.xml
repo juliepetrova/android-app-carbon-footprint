@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Carbon Low</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_more">View more</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="nature_pollution">Nature pollution</string>
+    <string name="join_now">Join Now</string>
+    <string name="my_score">My score</string>
+    <string name="my_rankning">My rankning</string>
+    <string name="city_ranking">City ranking</string>
+    <string name="tab_suggestions">Suggestions</string>
+    <string name="tab_completed">Completed</string>
+    <string name="post_heading">Suggest more ways to limit your carbon footprint impact</string>
+    <string name="_1206_completed_challenges">1206 completed challenges in 2021</string>
+    <string name="be_a_part_of_saving_our_nature">Be a part of saving our nature!</string>
+    <string name="details">Details:</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_have_successfully_ncompleted_a_suggestion">You have successfully \ncompleted a suggestion!</string>
+    <string name="earned">EARNED</string>
+    <string name="confirm">Confirm</string>
+</resources>

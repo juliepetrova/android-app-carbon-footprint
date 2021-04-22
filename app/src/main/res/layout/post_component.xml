@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_marginVertical="20dp"
+    app:cardCornerRadius="12dp"
+    android:background="@android:color/transparent"
+    app:cardElevation="6dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:scrollHorizontally="false">
+
+            <LinearLayout
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:contentDescription="avatar"
+                    android:src="@mipmap/ic_avatar" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jordan"
+                    android:textSize="21dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/avatar"
+                android:paddingHorizontal="12dp"
+                android:paddingTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="250dp"
+                    android:id="@+id/title"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:id="@+id/post"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros sed mauris condimentum, aliquam pulvinar massa feugiat. Vivamus sed Donec suscipit eros sed mauris condimentum, aliquam pulvinar massa feugiat. Vivamus sed t velit risus."
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/upvotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="left"
+                        android:text="55"
+                        android:textColor="@color/grayTextColor"
+                        android:textSize="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/like"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:contentDescription="upvote"
+                        android:src="@mipmap/ic_thumpup" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/downvotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="left"
+                        android:text="55"
+                        android:textColor="@color/grayTextColor"
+                        android:textSize="20dp"></TextView>
+
+                    <ImageView
+                        android:id="@+id/dislike"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:contentDescription="downvote"
+                        android:src="@mipmap/ic_thumpdown" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

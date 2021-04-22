@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "882028984873",
+    "project_id": "nature-duo-app",
+    "storage_bucket": "nature-duo-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882028984873:android:6817910032151c3cf83a38",
+        "android_client_info": {
+          "package_name": "com.julie.reducecarbonfootprintapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882028984873-djkepg9n89spiuukgkm4e6usv563amnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYIq7gtR1tNX6h4f47SQdsefV_Qwlt884"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882028984873-djkepg9n89spiuukgkm4e6usv563amnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

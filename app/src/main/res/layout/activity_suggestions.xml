@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuggestionsActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wave"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.julie.reducecarbonfootprintapp.components.RankingComponent
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:alignmentMode="alignMargins">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/layoutTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tabSuggestions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_suggestions" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tabCompleted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_completed" />
+
+                </com.google.android.material.tabs.TabLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="471dp"
+                android:layout_margin="22dp"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="491dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="14.0sp"
+                    android:scrollbars="none"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/whiteTextColor"
+        app:headerLayout="@layout/header_nav"
+        app:itemIconTint="@color/blackTextColor"
+        app:itemTextColor="@color/blackTextColor"
+        app:menu="@menu/drawermenu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

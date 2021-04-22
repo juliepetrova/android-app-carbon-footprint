@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuggestionDetailsActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="270dp"
+                    android:alpha="0.9"
+                    android:contentDescription="@string/nature_pollution"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bottles" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/myImageView"
+                    android:layout_alignBottom="@id/myImageView"
+                    android:layout_margin="20dp"
+                    android:alpha="1.2"
+                    android:gravity="left"
+                    android:lineSpacingExtra="10dp"
+                    android:text="Reduce plastic use in your household"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tons"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/myImageView"
+                    android:layout_alignBottom="@id/myImageView"
+                    android:layout_margin="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:alpha="1.2"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:text="80 tons \nper year"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:paddingBottom="5dp"
+                android:text="The average annual consumption of a person is about 100 kg of plastic, which measures to 80 tons of carbon dioxide released in nature."
+                android:textColor="@color/grayTextColor"
+                android:textSize="17sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="20dp"
+                style="@style/MyProgressBar"
+                android:progress="30"
+                android:theme="@style/MyProgressBar" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/people"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="1.2"
+                    android:gravity="left"
+                    android:text="512/1000 people"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/joinNowBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="right"
+                    android:text="@string/join_now"
+                    android:textAlignment="center"
+                    tools:ignore="RtlCompat" />
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/whiteTextColor"
+        app:headerLayout="@layout/header_nav"
+        app:itemIconTint="@color/blackTextColor"
+        app:itemTextColor="@color/blackTextColor"
+        app:menu="@menu/drawermenu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

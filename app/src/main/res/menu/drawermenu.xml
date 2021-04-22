@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/suggestion"
+        android:title="Suggestions" android:icon="@drawable/lightbulb"
+        />
+    <item
+        android:id="@+id/posts"
+        android:title="Posts" android:icon="@drawable/post"/>
+    <item
+        android:id="@+id/leaderoard"
+        android:title="Leaderboard" android:icon="@drawable/podium"/>
+    <item
+        android:id="@+id/goals"
+        android:title="Goals" android:icon="@drawable/goal"/>
+    <item
+        android:id="@+id/profile"
+        android:title="My Profile" android:icon="@drawable/user"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Log out" android:icon="@drawable/logout"/>
+
+</menu>

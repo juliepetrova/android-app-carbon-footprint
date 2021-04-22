@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoalDetailsActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wave"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:alpha="0.8"
+                    android:contentDescription="@string/nature_pollution"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bulbs" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_menu"
+                    android:orientation="vertical"
+                    android:paddingBottom="40dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Challenge"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:text="#1000LitersOfWater"
+                        android:textAlignment="center"
+                        android:textColor="@color/blackTextColor"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:id="@+id/rlDates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:gravity="center">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/bg_dates"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dateStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="Begins"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDateStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:text="Mar 24, 2021"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="22sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/bg_dates"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dateEnd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="Ends"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDateEnd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:text="Apr 24, 2021"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="22sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:lineHeight="25dp"
+                        android:text="@string/details"
+                        android:textColor="@color/blackTextColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:lineHeight="25dp"
+                        android:text="Reducing our water usages reduces the energy required to process and deliver it to homes, businesses, farms, and communities, which, in turn, helps to reduce pollution and conserve fuel resources. \nSaving 10 000 liters of water is equivallent to providing water for a whole town in south Africa."
+                        android:textSize="18sp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@style/MyProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:progress="30"
+                        android:theme="@style/MyProgressBar">
+
+                    </ProgressBar>
+
+                    <RelativeLayout
+                        android:id="@+id/relativelayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp">
+
+                        <TextView
+                            android:id="@+id/tvPeople"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="512/1000 people"
+                            android:textColor="@color/blackTextColor"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/joinNowBtn"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginRight="-5dp"
+                            android:layout_marginBottom="-5dp"
+                            android:gravity="right"
+                            android:paddingHorizontal="28dp"
+                            android:paddingVertical="12dp"
+                            android:text="@string/join_now"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/whiteTextColor"
+        app:headerLayout="@layout/header_nav"
+        app:itemIconTint="@color/blackTextColor"
+        app:itemTextColor="@color/blackTextColor"
+        app:menu="@menu/drawermenu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

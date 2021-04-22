@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoalsActivity"
+    android:background="@drawable/wave">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/be_a_part_of_saving_our_nature"
+            android:textAlignment="textStart"
+            android:layout_margin="15dp"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tvSubHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1206_completed_challenges"
+            android:layout_marginHorizontal="15dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_wave"
+            android:paddingTop="32dp"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <ListView
+                android:id="@+id/listViewGoals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="14.0sp"
+                android:scrollbars="none"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/whiteTextColor"
+        app:headerLayout="@layout/header_nav"
+        app:itemIconTint="@color/blackTextColor"
+        app:itemTextColor="@color/blackTextColor"
+        app:menu="@menu/drawermenu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
